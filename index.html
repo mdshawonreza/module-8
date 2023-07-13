@@ -3,11 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>responsive my website</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+            background-color: skyblue;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .container2{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .item{
+            border: 2px solid rgb(146, 6, 6);
+            background-color: coral;
+            width: 200px;
+            height: 100px;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                flex-direction:column;
+            }
+        }
+        @media screen and ( max-width:576px) {
+           .container2{
+            flex-direction: column;
+           }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>responsive</h1>
+        <h1>flexible flex</h1>
+        <div class="container">
+            <div class="box">
+                <h2>first box</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quibusdam ea quisquam repellendus fugit aliquid mollitia? Tempore aspernatur excepturi, vitae deserunt eaque praesentium, quibusdam ex similique reprehenderit sapiente repellendus molestiae.</p>
+            </div>
+            <div class="box">
+                <h2>second box</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quibusdam ea quisquam repellendus fugit aliquid mollitia? Tempore aspernatur excepturi, vitae deserunt eaque praesentium, quibusdam ex similique reprehenderit sapiente repellendus molestiae.</p>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="item">item-1</div>
+            <div class="item">item-2</div>
+            <div class="item">item-3</div>
+            <div class="item">item-4</div>
+            <div class="item">item-5</div>
+            <div class="item">item-6</div>
+            <div class="item">item-7</div>
+            <div class="item">item-8</div>
+            <div class="item">item-9</div>
+            <div class="item">item-10</div>
+            <div class="item">item-11</div>
+            <div class="item">item-12</div>
+            <div class="item">item-13</div>
+            <div class="item">item-14</div>
+            <div class="item">item-15</div>
+            <div class="item">item-16</div>
+            <div class="item">item-17</div>
+            <div class="item">item-18</div>
+            <div class="item">item-19</div>
+            <div class="item">item-20</div>
+        </div>
     </header>
 </body>
 </html>
