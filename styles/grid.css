@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-template-rows: repeat(3 ,100px) 25px 25px;
+    gap: 5px;
+}
+.box{
+    background-color: darkgray;
+
+}
+#box-1{
+    grid-row: span 5;
+}
+#box-11 , #box-12{
+    grid-column: span 3;
+}
